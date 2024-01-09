@@ -1,0 +1,326 @@
+<html>
+   <head>
+      <title>Qwixx Score Card 01</title>
+
+      <style>
+        td {
+          text-align: center;
+        }
+        </style>
+   </head>
+   
+   <body>
+      <h1>Qwixx Score Card</h1>
+
+      <table border="1">
+        <tr style="height:30px">
+            <th width="8%">2</th>
+            <th width="8%">3</th>
+            <th width="8%">4</th>
+            <th width="8%">5</th>
+            <th width="8%">6</th>
+            <th width="8%">7</th>
+            <th width="8%">8</th>
+            <th width="8%">9</th>
+            <th width="8%">10</th>
+            <th width="8%">11</th>
+            <th width="8%">12</th>
+            <th width="8%">Bonus</th>
+        </tr>
+        <tr style="background-color:#FF0000; height:30px">
+            <td><input type="checkbox" name="red" id="r02" value="02" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r03" value="03" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r04" value="04" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r05" value="05" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r06" value="06" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r07" value="07" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r08" value="08" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r09" value="09" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r10" value="10" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r11" value="11" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="red" id="r12" value="12" onclick="checkBoxClicked(this.name)" disabled=true></td>
+            <td><input type="checkbox" name="red" id="r13" value="Bonus" disabled=true></td>
+        </tr>
+
+        <tr style="background-color:#FFFF00; height:30px">
+            <td><input type="checkbox" name="yellow" id="y02" value="02" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y03" value="03" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y04" value="04" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y05" value="05" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y06" value="06" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y07" value="07" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y08" value="08" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y09" value="09" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y10" value="10" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y11" value="11" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y12" value="12" disabled=true  onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="yellow" id="y13" value="Bonus" disabled=true></td>
+        </tr>
+
+        <tr style="height:10px" >
+            <td colspan="12"></td>
+        </tr>
+
+        <tr style="height:30px">
+            <th width="8%">12</th>
+            <th width="8%">11</th>
+            <th width="8%">10</th>
+            <th width="8%">9</th>
+            <th width="8%">8</th>
+            <th width="8%">7</th>
+            <th width="8%">6</th>
+            <th width="8%">5</th>
+            <th width="8%">4</th>
+            <th width="8%">3</th>
+            <th width="8%">2</th>
+            <th width="8%">Bonus</th>
+        </tr>
+
+        <tr style="background-color:#008000; height:30px">
+            <td><input type="checkbox" name="green" id="g02" value="12" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g03" value="11" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g04" value="10" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g05" value="09" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g06" value="08" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g07" value="07" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g08" value="06" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g09" value="05" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g10" value="04" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g11" value="03" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g12" value="02" disabled=true onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="green" id="g13" value="Bonus" disabled=true></td>
+        </tr>
+
+
+        <tr style="background-color:#0000FF; height:30px">
+            <td><input type="checkbox" name="blue" id="b02" value="12" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b03" value="11" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b04" value="10" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b05" value="09" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b06" value="08" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b07" value="07" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b08" value="06" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b09" value="05" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b10" value="04" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b11" value="03" onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b12" value="02" disabled=true onclick="checkBoxClicked(this.name)"></td>
+            <td><input type="checkbox" name="blue" id="b13" value="Bonus" disabled=true></td>
+        </tr>
+
+        <!-- failed throws -->
+        <tr style="height:10px" >
+            <td colspan="12"></td>
+        </tr>
+
+        <tr style="background-color:#808080; height:30px">
+            <td>Failed</td>
+            <td><input type="checkbox" name="failed" id="f01" value="-5"></td>
+            <td><input type="checkbox" name="failed" id="f02" value="-5"></td>
+            <td><input type="checkbox" name="failed" id="f03" value="-5"></td>
+            <td><input type="checkbox" name="failed" id="f04" value="-5"></td>
+            <td colspan="7" style="background-color:#ffffff;"></td>
+        </tr>
+
+      </table>
+
+      <br>
+
+      <table border="1">
+        <tr style="height:30px">
+            <th width="8%">Crosses</th>
+            <th width="5%">1</th>
+            <th width="5%">2</th>
+            <th width="5%">3</th>
+            <th width="5%">4</th>
+            <th width="5%">5</th>
+            <th width="5%">6</th>
+            <th width="5%">7</th>
+            <th width="5%">8</th>
+            <th width="5%">9</th>
+            <th width="5%">10</th>
+            <th width="5%">11</th>
+            <th width="5%">12</th>
+        </tr>
+        <tr style="height:30px">
+            <td>Points</td>
+            <td>1</td>
+            <td>3</td>
+            <td>6</td>
+            <td>10</td>
+            <td>15</td>
+            <td>21</td>
+            <td>28</td>
+            <td>36</td>
+            <td>45</td>
+            <td>55</td>
+            <td>66</td>
+            <td>78</td>
+        </tr>
+      </table>
+
+      <br>
+      
+      <input type="button" value="Calculate Score" onclick="getScore()"> 
+      <table border="1">
+        <tr>
+            <td>Scores </td>
+            <td id="scoreRed" style="background-color:#FF0000" width="60px">0</td>
+            <td style="font-weight: bold" width="10px">&nbsp;+&nbsp;</td>
+            <td id="scoreYellow" style="background-color:#FFFF00" width="60px">0</td>
+            <td style="font-weight: bold" width="10px">&nbsp;+&nbsp;</td>
+            <td id="scoreGreen" style="background-color:#008000" width="60px">0</td>
+            <td style="font-weight: bold" width="10px">&nbsp;+&nbsp;</td>
+            <td id="scoreBlue" style="background-color:#0000FF" width="60px">0</td>
+            <td style="font-weight: bold" width="10px">&nbsp;-&nbsp;</td>
+            <td id="scoreFailed" style="background-color:#808080" width="60px">0</td>
+            <td width="10px">&nbsp;=&nbsp;</td>
+            <td id="scoreTotal" width="60px">Total</td>
+        </tr>
+      </table>
+
+      <br>
+      
+      <input type="button" value="Reset Score vard" onclick="resetScoreCard()">
+
+      <!--
+      <p></p>
+      <h4>Score: <span id="score">0</span></h4>
+      <h4 id="resultReds">TotalReds</h4> -->
+
+      <script>
+
+        function resetScoreCard() {
+            
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = false;
+            });
+
+            document.getElementById("r12").disabled=true;
+            document.getElementById("y12").disabled=true;
+            document.getElementById("g12").disabled=true;
+            document.getElementById("b12").disabled=true;
+
+            document.getElementById("scoreRed").innerHTML = 0;
+            document.getElementById("scoreYellow").innerHTML = 0;
+            document.getElementById("scoreGreen").innerHTML = 0;
+            document.getElementById("scoreBlue").innerHTML = 0;
+            document.getElementById("scoreFailed").innerHTML = 0;
+            document.getElementById("scoreTotal").innerHTML = 0;
+
+        }
+
+
+        function checkBoxClicked(colour) {
+            console.log("colour: " + colour);
+            let queryChecked="input[name=\""+colour+"\"]:checked";
+            console.log("qry= " + queryChecked);
+
+            let checkboxes = document.querySelectorAll(queryChecked);
+            let count = 0;
+            checkboxes.forEach((checkbox) => {
+                count=count+1;
+            });
+
+            console.log("Number checked: " + count);
+            let row12="";
+            let row13="";
+            if(colour === "green") {
+                row12="g12";
+                row13="g13";
+                console.log("handle green row");
+            } else if(colour === "blue") {
+                row12="b12";
+                row13="b13";
+                console.log("handle blue row");
+            } else if(colour === "red") {
+                row12="r12";
+                row13="r13";
+            } else if(colour === "yellow") {
+                row12="y12";
+                row13="y13";
+            } else {
+                console.log("UNKNOWN COLOUR: " + colour); 
+            }
+
+            if (count >= 5) {
+                document.getElementById(row12).disabled=false;
+            } else {
+                document.getElementById(row12).disabled=true;
+            }
+
+            var checkbox12 = document.getElementById(row12);
+            if (checkbox12.checked == true) {
+                checkbox13 = document.getElementById(row13);
+                checkbox13.checked=true;
+            } else {
+                checkbox13 = document.getElementById(row13);
+                checkbox13.checked=false;
+            }
+
+        }
+
+
+        function getScore() {
+            const scores = [0,1,3,6,10,15,21,28,36,45,55,66,78];
+            let grandTotal=0;
+            // red
+            let checkboxes = document.querySelectorAll('input[name="red"]:checked');
+            let countRed = 0;
+           
+            checkboxes.forEach((checkbox) => {
+                countRed=countRed+1;
+            });
+            document.getElementById("scoreRed").innerHTML = scores[countRed];
+            grandTotal+=scores[countRed];
+
+            // yellow
+            let checkboxesYellow = document.querySelectorAll('input[name="yellow"]:checked');
+            let countYellow = 0;
+           
+            checkboxesYellow.forEach((checkbox) => {
+                countYellow=countYellow+1;
+            });
+            document.getElementById("scoreYellow").innerHTML = scores[countYellow];
+            grandTotal+=scores[countYellow];
+
+            // green
+             let checkboxesGreen = document.querySelectorAll('input[name="green"]:checked');
+            let countGreen = 0;
+           
+            checkboxesGreen.forEach((checkbox) => {
+                countGreen=countGreen+1;
+            });
+            document.getElementById("scoreGreen").innerHTML = scores[countGreen];
+            grandTotal+=scores[countGreen];
+
+            // blue
+            let checkboxesBlue = document.querySelectorAll('input[name="blue"]:checked');
+            let countBlue = 0;
+           
+            checkboxesBlue.forEach((checkbox) => {
+                countBlue=countBlue+1;
+            });
+            document.getElementById("scoreBlue").innerHTML = scores[countBlue];
+            grandTotal+=scores[countBlue];
+
+            document.getElementById("scoreTotal").innerHTML = grandTotal;
+
+            // failed
+            let checkboxesFailed = document.querySelectorAll('input[name="failed"]:checked');
+            let countFailed = 0;
+           
+            checkboxesFailed.forEach((checkbox) => {
+                countFailed=countFailed+1;
+            });
+            document.getElementById("scoreFailed").innerHTML = 5*countFailed;
+            grandTotal-=5*countFailed;
+
+            document.getElementById("scoreTotal").innerHTML = grandTotal;
+
+        }
+        
+        </script>
+
+   </body>
+</html>
